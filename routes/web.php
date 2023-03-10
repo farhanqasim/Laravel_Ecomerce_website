@@ -14,10 +14,10 @@ use App\Http\Controllers\usese;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-Route::get("login", function(){
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+Route::get("/", function(){
 return view("login");
 });
 Route::post("login",[usese::class,"login"]);
